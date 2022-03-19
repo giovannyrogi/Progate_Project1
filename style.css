@@ -1,0 +1,275 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    font-family: 'Courier New';
+    color: #364f6b;
+}
+
+.menu{
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; 
+    background: #FFFFFF;
+    z-index: 1;
+    border-bottom: 1px solid #7f8994;
+}
+
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float:left;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #364f6b;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom-container{
+    margin: 50px 0px;
+}
+
+.kolom-container .txt{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b; 
+    text-align: center;
+}
+
+h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #364f6b;
+}
+
+.btn {
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 20px 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    animation: btnanimate 3s infinite;
+}
+
+.btn:hover{
+    background: #364f6b;
+    text-decoration: none;
+    color: #FFFFFF;
+    animation: none;
+    padding: 22px 17px;
+}
+
+p{
+    margin: 10px auto;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 22px;   
+}
+
+.kolom-container .btn-txt{
+    padding: 30px 0;
+}
+
+h2{
+    text-align: center;
+}
+
+.tengah-container{
+    text-align: center;
+    width: 100%;
+}
+
+.tengah-container img{
+    margin: 10px 0;
+}
+
+.tutor-list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tutor-info{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.tutor-info img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.tutor-info img:hover{
+    width: 60%;
+}
+
+.tutor-info p{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+    color: #364f6b;
+}
+
+#kontak {
+    background: #dedede;
+    padding: 50px 0;
+}
+
+.footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.footer-section li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.footer-section li:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+h3{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+h1{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    width: 100%;
+    color: #364f6b;
+    line-height: 50px;
+    margin: 50px auto;
+}
+
+#copyright{
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #3b3a3b;
+    color: white;
+    font-style: 10px;
+    opacity: 0.8;
+}
+
+#beranda {
+    margin: 50px 0 100px 0;
+}
+
+@keyframes btnanimate {
+    0%  {background-color: rgb(62, 62, 80);}
+    20% {background-color: rgb(255, 0, 191);}
+    40% {background-color: rgb(139, 16, 187);}
+    60% {background-color: rgb(179, 27, 27);}
+    80% {background-color: rgb(255, 136, 0);}
+    100% {background-color: rgb(236, 27, 90);}
+  }
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a{
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu li {
+        display: inline-block;
+        float: none;
+    }
+
+    section{
+        display: block;
+    }
+
+    section img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .tutor-info{
+        width: 50%;
+    } 
+}
